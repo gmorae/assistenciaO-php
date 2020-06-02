@@ -1,0 +1,52 @@
+@import './vars.css';
+.services {
+  margin-top: 30px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+}
+
+.services section div {
+  border: 1px solid #dafcef;
+  padding: 80px 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.services section div:hover {
+  border-color: var(--blue-ligth);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.services section div h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--blue-dark);
+  margin-bottom: 10px;
+}
+
+.services section div p {
+  color: #506172;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.services button {
+  width: 25%;
+}
